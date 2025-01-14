@@ -11,6 +11,7 @@ function Sidebar() {
       </div>
       <nav className="nav-links">
         <Link to="/">HOME</Link>
+        <Link to="/quality-check">QUALITY CHECK</Link>
       </nav>
     </aside>
   );
