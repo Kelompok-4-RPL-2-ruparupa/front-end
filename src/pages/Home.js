@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Mengimpor Link
+import { Link } from "react-router-dom"; 
 import Sidebar from "../components/Sidebar";
 import "../styles/Home.css";
 import foto1 from "../assets/foto1.png";

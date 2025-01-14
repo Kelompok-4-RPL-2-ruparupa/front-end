@@ -1,0 +1,160 @@
+.sidebar {
+    background-color: #ff5715;
+    color: white;
+    width: 200px;
+    height: 100vh;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .quality-check-container {
+    display: flex;
+    margin-left: 200px;
+    width: calc(100% - 200px);
+  }
+  
+  .quality-check-container .content {
+    width: 100%;
+    padding: 20px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .quality-check-container h1 {
+    color: #ff5715;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    margin-left: -110px;
+    padding-left: 0;
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  .quality-check-container .cara-pemakaian {
+    width: 100%;
+    margin-bottom: -25px;
+    margin-left: -100px;
+    padding-left: 0;
+  }
+  
+  .quality-check-container .cara-pemakaian-title {
+    color: #ff5715;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-left: -5px;
+    padding-left: 0;
+    text-align: left;
+  }
+  
+  .quality-check-container .guides-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  
+  .quality-check-container .cek-kualitas {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-left: -110px;
+    padding-left: 0;
+  }
+  
+  .quality-check-container .cek-kualitas h2 {
+    color: #ff5715;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+  }
+  
+  .quality-check-container .hasil {
+    width: 100%;
+    margin-top: -20px;
+    margin-left: -110px;
+    padding-left: 0;
+  }
+  
+  .quality-check-container .hasil h2 {
+    color: #ff5715;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left;
+  }
+  
+  .quality-check-container .hasil p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    margin-left: 0;
+    padding-left: 0;
+    color: #333;
+    text-align: left;
+  }
+  
+  .quality-check-container .upload-section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .quality-check-container .file-label {
+    background-color: #ff5715;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .quality-check-container .file-label:hover {
+    background-color: #ff5715;
+    transform: scale(1.05);
+  }
+  
+  .quality-check-container .cek-button {
+    background-color: #ff5715;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .quality-check-container .cek-button:hover {
+    background-color: #ff5715;
+    transform: scale(1.05);
+  }
+  
+  .quality-check-container .preview {
+    width: 100%;
+    margin: 20px 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .quality-check-container .preview img {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
