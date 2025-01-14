@@ -7,7 +7,9 @@ function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="logo-container">
-        <img src={logo} alt="Logo RupaRupa" className="logo" />
+        <a href="https://www.ruparupa.com" target="_blank" rel="noopener noreferrer">
+          <img src={logo} alt="Logo RupaRupa" className="logo" />
+        </a>
       </div>
       <nav className="nav-links">
         <Link to="/">HOME</Link>
