@@ -1,92 +1,203 @@
-.sidebar {
-    background-color: #ff5715;
-    color: white;
-    width: 200px;
-    height: 100vh;
-    padding: 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    font-family: 'DM Sans', sans-serif;
-  }
-  
-  .quality-check-container {
-    display: flex;
-    margin-left: 200px;
-    width: calc(100% - 200px);
-  }
-  
-  .quality-check-container .content {
-    width: 100%;
-    padding: 20px;
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .quality-check-container h1 {
-    color: #ff5715;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    margin-left: -110px;
-    padding-left: 0;
-    align-self: flex-start;
-    text-align: left;
-  }
-  
-  .quality-check-container .cara-pemakaian {
-    width: 100%;
-    margin-bottom: -25px;
-    margin-left: -100px;
-    padding-left: 0;
-  }
-  
-  .quality-check-container .cara-pemakaian-title {
-    color: #ff5715;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    margin-left: -5px;
-    padding-left: 0;
-    text-align: left;
-  }
-  
-  .quality-check-container .guides-container {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 30px;
-    margin-left: 0;
-    padding-left: 0;
-    width: 100%;
-  }
-  
-  .quality-check-container .cek-button {
-    background-color: #ff5715;
-    color: white;
-    padding: 12px 40px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    margin: 20px 0;
-    transition: background-color 0.3s, transform 0.2s;
-    margin-top: 50px; 
-  }
-  
-  .quality-check-container .cek-button:hover {
-    background-color: #ff5715;
-    transform: scale(1.05);
+/* QualityCheck.css */
+.quality-check-container {
+  display: flex;
+  width: 100%;
+}
+
+.content {
+  margin-left: 200px;
+  width: calc(100% - 200px);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quality-check-container h1 {
+  color: #ff5715;
+  font-size: clamp(24px, 4vw, 2.5rem);
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.cara-pemakaian {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.cara-pemakaian-title {
+  color: #ff5715;
+  font-size: clamp(20px, 3vw, 2rem);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.guides-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  justify-content: center; /* Menambah justify-content center */
+}
+
+.guide {
+  flex: 0 1 400px; /* Mengubah flex basis ke 400px */
+  max-width: 400px; /* Menambah max-width */
+}
+
+.guide-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-height: 300px; /* Menambah max-height */
+  object-fit: contain; /* Memastikan gambar tidak terdistorsi */
+}
+
+.hal-yang-disiapkan {
+  color: #ff5715;
+  margin-top: 30px;
+}
+
+.hal-yang-disiapkan h2 {
+  font-size: clamp(18px, 2.5vw, 24px);
+  margin-bottom: 15px;
+}
+
+.hal-yang-disiapkan ol {
+  font-size: clamp(14px, 1.8vw, 16px);
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+.hal-yang-disiapkan li {
+  margin-bottom: 10px;
+}
+
+.cek-kualitas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.cek-button {
+  background-color: #ff5715;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: clamp(14px, 1.5vw, 1.1rem);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.cek-button:hover {
+  background-color: #ff5715;
+  transform: scale(1.05);
+}
+
+.cek-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .guide {
+    flex: 0 1 450px; /* Sesuaikan untuk layar besar tapi tetap proporsional */
   }
 
-  .hal-yang-disiapkan {
-    color: #ff5715;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    margin-top: -50px; 
-    margin-left: -5px;
-    padding-left: 0;
-    text-align: left;
+  .guide-image {
+    max-height: 350px;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .guides-container {
+    justify-content: center; /* Di ukuran ini baru mulai center */
+    padding-left: 0;
+  }
+
+  .guide {
+    flex: 0 1 400px;
+  }
+
+  .guide-image {
+    max-height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .guides-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    justify-content: flex-start; /* Ubah ke flex-start untuk align ke kiri */
+    padding-left: 20px; /* Tambah padding kiri */
+  }
+  
+  .guide {
+    flex: 0 1 500px; /* Perbesar flex basis */
+    max-width: 500px; /* Perbesar max-width */
+  }
+  
+  .guide-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 400px; /* Perbesar max-height */
+    object-fit: contain;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cek-button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .quality-check-container h1 {
+    font-size: 24px;
+  }
+
+  .cara-pemakaian-title {
+    font-size: 20px;
+  }
+
+  .hal-yang-disiapkan h2 {
+    font-size: 18px;
+  }
+
+  .hal-yang-disiapkan ol {
+    font-size: 14px;
+  }
+
+  .guide {
+    max-width: 100%;
+  }
+
+  .guide-image {
+    max-height: 200px;
+  }
+}
