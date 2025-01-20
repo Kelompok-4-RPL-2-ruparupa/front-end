@@ -42,7 +42,7 @@ function QualityCheck() {
               className="cek-button streamlit-button"
               onClick={handleStreamlitAccess}
             >
-              Cek Kualitas
+              Cek Kualitas Sekarang!
             </button>
           </div>
         </div>
