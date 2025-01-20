@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import "../styles/QualityCheck.css";
 import Guide1 from "../assets/Guide1.png";
 import Guide2 from "../assets/Guide2.png";
 
 function QualityCheck() {
-  const handleRuparupaRedirect = () => {
-    window.open('https://www.ruparupa.com', '_blank');
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedFile, setSelectedFile] = useState(null);
+  const [hasil, setHasil] = useState(null);
+  const [isChecking, setIsChecking] = useState(false);
+
+  const getKualitasLabel = (accuracy) => {
+    const percentage = parseFloat(accuracy);
+    if (percentage >= 90) return "Sangat Baik";
+    if (percentage >= 70) return "Baik";
+    if (percentage >= 50) return "Cukup Baik";
+    if (percentage >= 30) return "Buruk";
+    return "Sangat Buruk";
   };
+
+  const handleStreamlitAccess = () => {
+    window.open('https://ruparupa.streamlit.app/', '_blank');
+  };
+
+  useEffect(() => {
+    if (hasil) {
+      const hasilSection = document.getElementById("hasil-section");
+      if (hasilSection) {
+        hasilSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+  }, [hasil]);
 
   return (
     <div className="quality-check-container">
@@ -30,15 +56,38 @@ function QualityCheck() {
             <ol>
               <li>Persiapkan koneksi internet yang baik</li>
               <li>Unduh ataupun foto barang yang ingin dicek kualitasnya</li>
-              <li>Size maksimal untuk foto yang diunggah adalah 5 Mb</li>
-              <li>Akses ruparupa dari tombol di bawah ini</li>
+              <li>Size maksimal untuk foto yang diunggah adalah 200 Mb</li>
             </ol>
           </div>
-          <button className="ruparupa-button" onClick={handleRuparupaRedirect}>
-            Kunjungi Ruparupa
-          </button>
         </div>
+
+        <div className="cek-kualitas">
+          {selectedImage && (
+            <div className="preview">
+              <img src={selectedImage} alt="Preview" />
+            </div>
+          )}
+          <div className="button-container">
+            <button
+              className="cek-button streamlit-button"
+              onClick={handleStreamlitAccess}
+            >
+              Cek Kualitas
+            </button>
+          </div>
+        </div>
+
+        {hasil && (
+          <div className="hasil" id="hasil-section">
+            <h2>Hasil</h2>
+            <p>Jenis mebel: {hasil.jenisMebel}</p>
+            <p>Akurasi: {hasil.akurasi}%</p>
+            <p>Kualitas: {hasil.kualitas}</p>
+          </div>
+        )}
       </main>
     </div>
   );
 }
+
+export default QualityCheck;
