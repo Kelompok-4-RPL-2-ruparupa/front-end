@@ -44,4 +44,11 @@
     color: #f3f3f3; 
     transition: transform 0.1s ease; 
   }
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
   
