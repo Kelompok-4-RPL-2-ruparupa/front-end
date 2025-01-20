@@ -73,6 +73,7 @@
     cursor: pointer;
     margin: 20px 0;
     transition: background-color 0.3s, transform 0.2s;
+    margin-top: 50px; 
   }
   
   .quality-check-container .cek-button:hover {
@@ -84,7 +85,7 @@
     color: #ff5715;
     font-size: 1.2rem;
     margin-bottom: 20px;
-    margin-top: -70px; 
+    margin-top: -50px; 
     margin-left: -5px;
     padding-left: 0;
     text-align: left;
