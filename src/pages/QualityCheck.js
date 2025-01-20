@@ -98,9 +98,8 @@ function QualityCheck() {
               <img src={Guide2} alt="Panduan 2" className="guide-image" />
             </div>
           </div>
-        </div>
 
-        <div className="hal-yang-disiapkan">
+          <div className="hal-yang-disiapkan">
             <h2>Hal yang perlu disiapkan</h2>
             <ol>
               <li>Persiapkan koneksi internet yang baik</li>
