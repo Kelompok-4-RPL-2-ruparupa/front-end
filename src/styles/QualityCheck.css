@@ -79,55 +79,6 @@
     text-align: left;
   }
   
-  .quality-check-container .hasil {
-    width: 100%;
-    margin-top: -20px;
-    margin-left: -110px;
-    padding-left: 0;
-  }
-  
-  .quality-check-container .hasil h2 {
-    color: #ff5715;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    margin-left: 0;
-    padding-left: 0;
-    text-align: left;
-  }
-  
-  .quality-check-container .hasil p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-    margin-left: 0;
-    padding-left: 0;
-    color: #333;
-    text-align: left;
-  }
-  
-  .quality-check-container .upload-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  
-  .quality-check-container .file-label {
-    background-color: #ff5715;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .quality-check-container .file-label:hover {
-    background-color: #ff5715;
-    transform: scale(1.05);
-  }
-  
   .quality-check-container .cek-button {
     background-color: #ff5715;
     color: white;
