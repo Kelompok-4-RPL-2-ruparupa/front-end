@@ -100,6 +100,17 @@ function QualityCheck() {
           </div>
         </div>
 
+        <div className="hal-yang-disiapkan">
+            <h2>Hal yang perlu disiapkan</h2>
+            <ol>
+              <li>Persiapkan koneksi internet yang baik</li>
+              <li>Unduh ataupun foto barang yang ingin dicek kualitasnya</li>
+              <li>Size maksimal untuk foto yang diunggah adalah 5 Mb</li>
+              <li>Akses streamlit dari tombol di bawah ini</li>
+            </ol>
+          </div>
+        </div>
+
         <div className="cek-kualitas">
           <h2>Cek Kualitas Meubel</h2>
           <div className="upload-section">
