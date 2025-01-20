@@ -63,22 +63,6 @@
     width: 100%;
   }
   
-  .quality-check-container .cek-kualitas {
-    width: 100%;
-    margin-bottom: 30px;
-    margin-left: -110px;
-    padding-left: 0;
-  }
-  
-  .quality-check-container .cek-kualitas h2 {
-    color: #ff5715;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    margin-left: 0;
-    padding-left: 0;
-    text-align: left;
-  }
-  
   .quality-check-container .cek-button {
     background-color: #ff5715;
     color: white;
@@ -94,19 +78,6 @@
   .quality-check-container .cek-button:hover {
     background-color: #ff5715;
     transform: scale(1.05);
-  }
-  
-  .quality-check-container .preview {
-    width: 100%;
-    margin: 20px 0;
-    margin-left: 0;
-    padding-left: 0;
-  }
-  
-  .quality-check-container .preview img {
-    max-width: 600px;
-    width: 100%;
-    border-radius: 8px;
   }
 
   .hal-yang-disiapkan {
