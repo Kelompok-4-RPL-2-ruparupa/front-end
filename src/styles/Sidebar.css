@@ -54,10 +54,20 @@
   transform: scale(0.95);
 }
 
+/* Media query untuk menyembunyikan sidebar di bawah 768px */
 @media screen and (max-width: 768px) {
   .sidebar {
     display: none;
   }
 }
 
-  
+@media screen and (max-width: 480px) {
+  .logo {
+    width: 100px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+}
