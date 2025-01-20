@@ -158,9 +158,9 @@
     border-radius: 8px;
   }
 
-.quality-check-container .hal-yang-disiapkan-title {
-  color: #ff5715;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  text-align: left;
-}
+  .hal-yang-disiapkan {
+    color: #ff5715;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: left;
+  }
