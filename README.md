@@ -1,3 +1,7 @@
+Repository Sebelumnya :
+https://github.com/alifionauval/ruparupa.git
+Front-End (Alifio Nauval Priatmodjo)
+
 <<<<<<< HEAD
 # Getting Started with Create React App
 
