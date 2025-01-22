@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -58,21 +57,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-## Kelompok 4
-- Alifio Nauval Priatmodjo (50421127)
-- Befon Mario Christmawan (50421271)
-- Ivanno Rifky Ali Raharjo (50421673)
-- Muhammad Zharfan Alfanso (51421100)
-
-Link GitHub Backend : [https://github.com/muhzarfan/back-end-rupa2]  
-Link GitHub Frontend : [https://github.com/alifionauval/ruparupa]  
-Link GitHub Machine Learning : https://github.com/muhzarfan/model-ruparupa  
-Link Figma : [https://www.figma.com/design/wm6Y63ngdAHnPUef59v5lz/Design?node-id=7-3&t=iD9N2lHIsPdQSDpY-1]  
-Link Trello : [https://trello.com/invite/b/67820138bdd1937ea9a6411a/ATTI5edb9cd2b0486426f45cbe84bd94404eF282ED0A/kelompok-4-rpl-2]  
-Link Google Docs Proposal Penawaran : [https://docs.google.com/document/d/1szpxZGRCdu1v95KaTYMj-LD0JaTX4u16k1wnWNui_K0/edit?usp=sharing] 
-
-
-
 ### Advanced Configuration
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
@@ -84,6 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# front-end
->>>>>>> eb98d2e43b2bdfc178b83a989af8fdeb11fad8a4
+
+## Kelompok 4
+- Alifio Nauval Priatmodjo (50421127)
+- Befon Mario Christmawan (50421271)
+- Ivanno Rifky Ali Raharjo (50421673)
+- Muhammad Zharfan Alfanso (51421100)
+
+Link GitHub : [https://github.com/Kelompok-4-RPL-2-ruparupa] 
+Link Figma : [https://www.figma.com/design/wm6Y63ngdAHnPUef59v5lz/Design?node-id=7-3&t=iD9N2lHIsPdQSDpY-1]  
+Link Trello : [https://trello.com/invite/b/67820138bdd1937ea9a6411a/ATTI5edb9cd2b0486426f45cbe84bd94404eF282ED0A/kelompok-4-rpl-2]  
+Link Google Docs Proposal Penawaran : [https://docs.google.com/document/d/1szpxZGRCdu1v95KaTYMj-LD0JaTX4u16k1wnWNui_K0/edit?usp=sharing] 
